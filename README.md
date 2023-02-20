@@ -6,15 +6,20 @@ Currently deployed using netlify ([link](https://browser-lehra.netlify.app)).
 
 ## Features
 
+### General
+
+- [x] Configure for indexing (SEO, robots etc.)
+- [ ] Isolate class/module for Tanpura
+
 ### Tanpura
 
-- [x] Change scale (Shadja)
+- [x] Setup head tags
+- [x] Change scale (Shadja)Setup head tag
 - [x] Volume level
-- [x] Configure for indexing (SEO etc.)
-- [ ] Fine tuning
-- [ ] Mute
-- [ ] Keyboard shortcuts
-- [ ] Save and Load configuration
+- [x] Fine tuning
+- [x] Mute
+- [x] Keyboard shortcuts
+- [x] Save and Load configuration
 - [ ] Multiple configurations
 - [ ] Tempo (Custom delay between any two nodes)
 - [ ] Customizing nodes (different nodes instead of the default 'Pancham, Shadja, Shadja, Shadja - kharj')
