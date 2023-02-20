@@ -39,7 +39,7 @@
 
 	$: volumeLevel;
 	function playDetuneNode(detune: number) {
-		if (!audioContext || audioContext.state==="closed" || !tanpuraAudioBuffer) {
+		if (!audioContext || audioContext.state === 'closed' || !tanpuraAudioBuffer) {
 			return;
 		}
 		const node = audioContext.createBufferSource();
@@ -55,9 +55,9 @@
 	function playTanpuraFromArray(tanpuraSeq: tanpuraSequenceI) {
 		playDetuneNode(tanpuraSeq[0].node + nodeIdx - nodeOffset);
 		tanpuraCurrPos = setTimeout(() => {
-			const latestNode=tanpuraSeq.shift();
-			if(latestNode) {
-				tanpuraSeq.push(latestNode)
+			const latestNode = tanpuraSeq.shift();
+			if (latestNode) {
+				tanpuraSeq.push(latestNode);
 			}
 			playTanpuraFromArray(tanpuraSeq);
 		}, tanpuraSeq[0].delayToNext);
@@ -95,6 +95,10 @@
 
 <svelte:head>
 	<title>Browser tanpura</title>
+	<meta
+		name="description"
+		content="A browser (javascript) based open source Tanpura application."
+	/>
 </svelte:head>
 <div class="container">
 	{#if audioContext === undefined}
